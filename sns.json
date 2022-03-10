@@ -1,0 +1,25 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "sns:ListSubscriptionsByTopic",
+                "sns:Publish",
+                "sns:Subscribe",
+                "sns:ConfirmSubscription"
+            ],
+            "Resource": "arn:aws:sns:us-east-1:xxxxxxxxxxxx:SNStopic"
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "sns:ListTopics",
+                "sns:Unsubscribe"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
