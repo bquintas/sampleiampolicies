@@ -1,0 +1,32 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "timestream:DescribeDatabase",
+                "timestream:ListMeasures",
+                "timestream:WriteRecords",
+                "timestream:ListTables",
+                "timestream:Select",
+                "timestream:DescribeTable"
+            ],
+            "Resource": [
+                "arn:aws:timestream:us-east-1:xxxxxxxxxxxx:database/sampleDB",
+                "arn:aws:timestream:us-east-1:xxxxxxxxxxxx:database/sampleDB/table/IoTMulti"
+            ]
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "timestream:DescribeEndpoints",
+                "timestream:CancelQuery",
+                "timestream:ListDatabases",
+                "timestream:SelectValues"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
