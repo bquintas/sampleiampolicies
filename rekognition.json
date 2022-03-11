@@ -1,0 +1,15 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "rekognition:StopProjectVersion",
+                "rekognition:StartProjectVersion",
+                "rekognition:DetectCustomLabels"
+            ],
+            "Resource": "arn:aws:rekognition:eu-west-1:xxxxxxxxxxxx:project/rooms_1/version/rooms_1.2022-03-10T14.47.09/1646920032920"
+        }
+    ]
+}
